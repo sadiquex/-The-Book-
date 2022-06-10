@@ -8,13 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     </head>
     <body>
         <!-- navbar -->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-xxl">
                 <a href="#intro" class="navbar-brand">
-                    <div class="span fw-bold text-secondary">The Magic Book</div>
+                    <div class="span fw-bold text-secondary">
+                        <i class="bi bi-book-half"></i>
+                        The Magic Book
+                    </div>
                 </a>
                 <!-- toggle button for mobile-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-div" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,6 +125,197 @@
             </div>
         </div>
     </section>
+    
+
+    <!-- accordion section -->
+
+    <!-- topics at a glance -->
+    <section class="topics">
+        <div class="container-md">
+            <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+        </div>
+
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+            <div class="col-6 col-lg-4">
+                <img src="/assets/ebook2.png" alt="ebook" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- accordion -->
+        <!-- first accordion item -->
+        <div class="col-lg-6">
+        <div class="accordion" id="chapters">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                        Chapter 1- Your first web page
+                    </button>
+                </h2>
+                <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapter">
+                    <div class="accordion-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptatibus qui reprehenderit consectetur voluptatem esse ut modi sunt magnam, velit dolorem laborum, amet perspiciatis fugit non dolores eum explicabo illum!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repellendus, consequatur nostrum, quaerat maiores ab ex aut magnam facilis nobis quidem totam asperiores nihil labore voluptatum alias ullam odit aspernatur?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second accordion item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
+                        Chapter 2 - Mastering Css
+                    </button>
+                </h2>
+                <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapter">
+                    <div class="accordion-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptatibus qui reprehenderit consectetur voluptatem esse ut modi sunt magnam, velit dolorem laborum, amet perspiciatis fugit non dolores eum explicabo illum!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repellendus, consequatur nostrum, quaerat maiores ab ex aut magnam facilis nobis quidem totam asperiores nihil labore voluptatum alias ullam odit aspernatur?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third accordion item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
+                        Chapter 3 - The Power of Javascript
+                    </button>
+                </h2>
+                <div id="chapter-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#chapter">
+                    <div class="accordion-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptatibus qui reprehenderit consectetur voluptatem esse ut modi sunt magnam, velit dolorem laborum, amet perspiciatis fugit non dolores eum explicabo illum!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repellendus, consequatur nostrum, quaerat maiores ab ex aut magnam facilis nobis quidem totam asperiores nihil labore voluptatum alias ullam odit aspernatur?</p>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </div>
+
+    </section>
+
+    <!-- lists -->
+    <section id="reviews" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+                <p class="lead">What my students have said about this book...</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-2 container">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">A must buy for every inspiring web dev</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis veniam alias! Corporis quod cupiditate ab reiciendis molestias officia in, illum, aliquam error iste suscipit vitae cumque doloribus illo sequi?</p>
+                            <small>Review by Sadique</small>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item py-3">
+                        <h5 class="mb-1">A must buy for every inspiring web dev</h5>
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis veniam alias! Corporis quod cupiditate ab reiciendis molestias officia in, illum, aliquam error iste suscipit vitae cumque doloribus illo sequi?</p>
+                        <small>Review by Sadique</small>
+                    </div>
+
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every inspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis veniam alias! Corporis quod cupiditate ab reiciendis molestias officia in, illum, aliquam error iste suscipit vitae cumque doloribus illo sequi?</p>
+                        <small>Review by Sadique</small>
+                    </div>
+
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <h5 class="mb-1">A must buy for every inspiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis veniam alias! Corporis quod cupiditate ab reiciendis molestias officia in, illum, aliquam error iste suscipit vitae cumque doloribus illo sequi?</p>
+                        <small>Review by Sadique</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in Touch</h2>
+                <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">Email Address:
+                        </label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="abubakasaddik@example.com">
+                        </div>
+                        
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control" id="none" placeholder="e.g. Saddik">
+                        </div>
+                        
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        <select id="subject">
+                            <option value="pricing" selected>Pricing Query</option>
+                            <option value="content">Content query</option>
+                            <option value="other">Other query</option>
+                        </select>
+
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea id="query" class="form-control" style="140px" placeholder="type your question here"></textarea>
+                            <label for="query">Your query...</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+
+
+                
+
+            </div>
+        </div>
+    </section>
+
+
 
         
 
